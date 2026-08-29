@@ -8,7 +8,7 @@
 
 ## Avant TOUTE action, lis dans l'ordre :
 
-1. `REGLES.md` — les 17 lois communes (obligatoires, dont préfixe `[agent]-[lieu]` sur branches et commits, bookends sync §15–16, claim concurrence §17)
+1. `REGLES.md` — les 19 lois communes (obligatoires, dont préfixe `[agent]-[lieu]` §1, bookends sync §15–16, claim concurrence §17, survie session §18–19)
 2. `HANDOFF.md` — où en est le projet
 3. `TACHES.md` — qui fait quoi
 4. `MEMOIRE-PARTAGEE.md` — apprentissages inter-agent (append-only)
