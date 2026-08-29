@@ -8,7 +8,7 @@
 
 ## Avant TOUTE action, lis dans l'ordre :
 
-1. `REGLES.md` — les 19 lois communes (obligatoires, dont préfixe `[agent]-[lieu]` §1, bookends sync §15–16, claim concurrence §17, survie session §18–19)
+1. `REGLES.md` — les 20 lois communes (obligatoires, dont préfixe `[agent]-[lieu]` §1, bookends sync §15–16, claim concurrence §17, survie session §18–19, log §20)
 2. `HANDOFF.md` — où en est le projet
 3. `TACHES.md` — qui fait quoi
 4. `MEMOIRE-PARTAGEE.md` — apprentissages inter-agent (append-only)
@@ -26,8 +26,9 @@ Puis, si tu ouvres un projet sous `~/projects/` : run `~/projects/coordination/b
 - Mets à jour `HANDOFF.md` (fait / état / suite / bloquages) et `TACHES.md` du projet.
 - Mets à jour `.coordination-summary.yaml` du projet (bump `dernière_maj`).
 - Run `~/projects/coordination/bin/sync-summary.sh` (règle 16).
+- Ajoute une entrée dans `~/projects/coordination/JOURNAL.md` (règle 20).
 - Commit avec message préfixé `[agent-lieu] …`.
-- Push ta branche (projet **et** coordination si tu y as poussé un sync). Local = perdu.
+- Push ta branche (projet **et** coordination si tu y as poussé un sync ou du log). Local = perdu.
 
 ## Onboarding d'un nouvel agent (pour Frank)
 

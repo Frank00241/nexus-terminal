@@ -57,4 +57,12 @@
     3. Mets à jour `HANDOFF.md`, `TACHES.md`, `.coordination-summary.yaml` (règle 16).
     4. Préviens Frank en ≤ 3 lignes : ce qui est committé, ce qui reste, où reprendre.
 
-*Système Gardien Multi-IA — 2026-08-11, règles 10–14 ajoutées 2026-08-27, règles 15–16 (bookends sync) et 17 (claim concurrence) ajoutées 2026-08-28, règles 18–19 (survie session) ajoutées 2026-08-29.*
+## Traçabilité
+
+20. **Log de session obligatoire.** À la sortie (avant ou après règles 16/19), ajoute une entrée dans `~/projects/coordination/JOURNAL.md` sous la date du jour :
+    ```
+    - HH:MM **[agent-lieu]** → `<projet>` (`branche`) : <résumé une ligne>
+    ```
+    Une entrée par session (pas par commit). Si la journée n'existe pas encore, crée la section `## 📅 YYYY-MM-DD` en tête du fichier. Le journal est append-only inversé (plus récent en haut).
+
+*Système Gardien Multi-IA — 2026-08-11, règles 10–14 ajoutées 2026-08-27, règles 15–16 (bookends sync) et 17 (claim concurrence) ajoutées 2026-08-28, règles 18–19 (survie session) et 20 (log obligatoire) ajoutées 2026-08-29.*
