@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Aperçu de Nexus Terminal</title>
+  <desc id="desc">Maquette d'un tableau de bord financier sombre avec cartes, graphique et heatmap.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="chart" x1="0" x2="0" y1="0" y2="1">
+      <stop stop-color="#58a6ff" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#58a6ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="680" rx="18" fill="url(#bg)"/>
+  <text x="42" y="42" fill="#8b949e" font-family="sans-serif" font-size="12" letter-spacing="4">EMPIRE CAPITAL</text>
+  <text x="42" y="78" fill="#58a6ff" font-family="sans-serif" font-size="26" font-weight="700">⚡ NEXUS TERMINAL v4</text>
+  <rect x="42" y="104" width="1116" height="60" rx="10" fill="#161b22" stroke="#21262d"/>
+  <g font-family="sans-serif">
+    <text x="64" y="128" fill="#8b949e" font-size="10">S&amp;P 500</text><text x="64" y="150" fill="#e6edf3" font-size="14" font-weight="700">5 760</text>
+    <text x="190" y="128" fill="#8b949e" font-size="10">NASDAQ</text><text x="190" y="150" fill="#3fb950" font-size="14" font-weight="700">22 822  +0.83%</text>
+    <text x="410" y="128" fill="#8b949e" font-size="10">VIX</text><text x="410" y="150" fill="#e6edf3" font-size="14" font-weight="700">19.27</text>
+    <text x="1020" y="128" fill="#8b949e" font-size="10">STATUT</text><text x="1020" y="150" fill="#3fb950" font-size="14" font-weight="700">● LIVE</text>
+  </g>
+  <g font-family="sans-serif">
+    <rect x="42" y="188" width="260" height="178" rx="12" fill="#161b22" stroke="#76b900"/>
+    <text x="62" y="218" fill="#76b900" font-size="18" font-weight="700">NVDA</text><text x="62" y="239" fill="#8b949e" font-size="12">NVIDIA · Semi-IA</text>
+    <text x="62" y="280" fill="#e6edf3" font-size="28" font-weight="700">$183.91</text><text x="62" y="302" fill="#3fb950" font-size="13">+0.00%</text>
+    <polyline points="62,340 94,330 126,334 158,312 190,320 222,290 282,270" fill="none" stroke="#76b900" stroke-width="3"/>
+    <rect x="322" y="188" width="260" height="178" rx="12" fill="#161b22" stroke="#21262d"/>
+    <text x="342" y="218" fill="#ed1c24" font-size="18" font-weight="700">AMD</text><text x="342" y="239" fill="#8b949e" font-size="12">AMD · Semi-IA</text>
+    <text x="342" y="280" fill="#e6edf3" font-size="28" font-weight="700">$236.64</text><text x="342" y="302" fill="#3fb950" font-size="13">+0.00%</text>
+    <rect x="602" y="188" width="556" height="178" rx="12" fill="#161b22" stroke="#21262d"/>
+    <text x="626" y="218" fill="#8b949e" font-size="12" letter-spacing="2">ÉVOLUTION 6 MOIS</text>
+    <polygon points="626,335 680,320 740,330 800,285 860,300 920,255 980,270 1040,225 1130,245 1130,345 626,345" fill="url(#chart)"/>
+    <polyline points="626,335 680,320 740,330 800,285 860,300 920,255 980,270 1040,225 1130,245" fill="none" stroke="#58a6ff" stroke-width="3"/>
+  </g>
+  <rect x="42" y="390" width="1116" height="230" rx="12" fill="#161b22" stroke="#21262d"/>
+  <text x="66" y="425" fill="#8b949e" font-family="sans-serif" font-size="12" letter-spacing="2">🌡️ HEATMAP MULTI-MÉTRIQUES</text>
+  <g font-family="sans-serif" font-size="13" font-weight="700">
+    <text x="66" y="467" fill="#8b949e">TITRE</text><text x="280" y="467" fill="#8b949e">P/E</text><text x="450" y="467" fill="#8b949e">CROISSANCE</text><text x="680" y="467" fill="#8b949e">MARGE</text><text x="880" y="467" fill="#8b949e">UPSIDE</text><text x="1030" y="467" fill="#8b949e">CONVICTION</text>
+    <text x="66" y="510" fill="#76b900">NVDA</text><rect x="250" y="488" width="90" height="34" rx="6" fill="#3fb950" fill-opacity=".2"/><text x="278" y="510" fill="#3fb950">36</text><rect x="430" y="488" width="120" height="34" rx="6" fill="#3fb950" fill-opacity=".2"/><text x="480" y="510" fill="#3fb950">+78%</text><rect x="660" y="488" width="110" height="34" rx="6" fill="#3fb950" fill-opacity=".2"/><text x="700" y="510" fill="#3fb950">73%</text><rect x="860" y="488" width="110" height="34" rx="6" fill="#3fb950" fill-opacity=".2"/><text x="895" y="510" fill="#3fb950">+46%</text><text x="1040" y="510" fill="#f5a623">★★★★★</text>
+    <text x="66" y="558" fill="#ed1c24">AMD</text><rect x="250" y="536" width="90" height="34" rx="6" fill="#f5a623" fill-opacity=".2"/><text x="278" y="558" fill="#f5a623">80</text><rect x="430" y="536" width="120" height="34" rx="6" fill="#3fb950" fill-opacity=".2"/><text x="480" y="558" fill="#3fb950">+34%</text><rect x="660" y="536" width="110" height="34" rx="6" fill="#f5a623" fill-opacity=".2"/><text x="700" y="558" fill="#f5a623">57%</text><rect x="860" y="536" width="110" height="34" rx="6" fill="#f5a623" fill-opacity=".2"/><text x="895" y="558" fill="#f5a623">+22%</text><text x="1040" y="558" fill="#f5a623">★★★★☆</text>
+  </g>
+</svg>
