@@ -93,7 +93,9 @@ const MARKET=[
   {l:"Bitcoin",v:"$71.6K",chg:"+0.84%",up:true},
 ];
 
-const MONTHS=["Oct","Nov","Déc","Jan","Fév","Mar","Avr"];
+// 13 libellés pour les 13 points de chaque `hist` (avril à avril) : avec 7,
+// les points 8 à 12 n'avaient pas de mois sur l'axe.
+const MONTHS=["Avr","Mai","Juin","Juil","Août","Sep","Oct","Nov","Déc","Jan","Fév","Mar","Avr"];
 
 // ─── GUIDE DES INDICATEURS ────────────────────────────────────────────────────
 const GUIDES = {
@@ -259,14 +261,14 @@ export default function App(){
   const lp=prices[active];
   const chg=+((lp-s.base)/s.base*100).toFixed(2);
   const pct52=((lp-s.low52)/(s.high52-s.low52)*100).toFixed(0);
-  const hist=s.hist.slice(0,-1).map((p,i)=>({d:MONTHS[i],p})).concat([{d:"Avr",p:lp}]);
+  const hist=s.hist.slice(0,-1).map((p,i)=>({d:MONTHS[i],p})).concat([{d:MONTHS[MONTHS.length-1],p:lp}]);
 
   // ── OVERVIEW ────────────────────────────────────────────────────────────────
   const OverviewCard=({ticker})=>{
     const st=BASE[ticker]; const lv=prices[ticker];
     const cv=+((lv-st.base)/st.base*100).toFixed(2);
     const pp=((lv-st.low52)/(st.high52-st.low52)*100).toFixed(0);
-    const miniH=st.hist.slice(0,-1).map((p,i)=>({d:MONTHS[i],p})).concat([{d:"Avr",p:lv}]);
+    const miniH=st.hist.slice(0,-1).map((p,i)=>({d:MONTHS[i],p})).concat([{d:MONTHS[MONTHS.length-1],p:lv}]);
     return(
       <div onClick={()=>{setActive(ticker);setView("detail");setTab("chart");}}
         style={{background:active===ticker?"#1c2128":C.card,
@@ -331,7 +333,7 @@ export default function App(){
               <span style={{fontSize:22,fontWeight:700}}>{s.name}</span>
               <span style={{background:C.border,padding:"2px 8px",borderRadius:4,fontSize:11,color:C.muted}}>{active}</span>
               <Badge signal={s.signal}/>
-              <span style={{fontSize:9,color:C.green}}>🟢 LIVE</span>
+              <span style={{fontSize:9,color:C.yellow}}>🟡 SIMULÉ</span>
             </div>
             <div style={{fontSize:30,fontWeight:700}}>
               ${lp.toFixed(2)}
@@ -886,7 +888,7 @@ export default function App(){
               color:C.yellow,fontSize:9,fontWeight:700}}>
             ❓ Guide Signal Convergent
           </button>
-          <div style={{fontSize:9,color:C.green}}>🟢 LIVE · Prix simulés toutes 3s</div>
+          <div style={{fontSize:9,color:C.yellow}}>🟡 SIMULÉ · Prix fictifs (variation aléatoire toutes 3s) · Pas un conseil financier</div>
           <div style={{fontSize:9,color:C.muted}}>Phase 1 · 15 000$ CAD</div>
         </div>
       </div>
